@@ -11,6 +11,9 @@
 		FAB415872C10788B00C49820 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB415862C10788B00C49820 /* ContentView.swift */; };
 		FAB415892C10788C00C49820 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB415882C10788C00C49820 /* Assets.xcassets */; };
 		FAB4158C2C10788C00C49820 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB4158B2C10788C00C49820 /* Preview Assets.xcassets */; };
+		FAB415962C10797100C49820 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB415952C10797100C49820 /* HeaderView.swift */; };
+		FAB415992C10937900C49820 /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB415982C10937900C49820 /* IconView.swift */; };
+		FAB4159C2C1093C000C49820 /* IconViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB4159B2C1093C000C49820 /* IconViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		FAB415862C10788B00C49820 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FAB415882C10788C00C49820 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAB4158B2C10788C00C49820 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FAB415952C10797100C49820 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		FAB415982C10937900C49820 /* IconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
+		FAB4159B2C1093C000C49820 /* IconViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +57,9 @@
 		FAB415832C10788B00C49820 /* InstagramSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				FAB4159A2C1093A500C49820 /* Models */,
+				FAB415922C1078BD00C49820 /* Views */,
 				FAB415842C10788B00C49820 /* InstagramSwiftUIApp.swift */,
-				FAB415862C10788B00C49820 /* ContentView.swift */,
 				FAB415882C10788C00C49820 /* Assets.xcassets */,
 				FAB4158A2C10788C00C49820 /* Preview Content */,
 			);
@@ -65,6 +72,48 @@
 				FAB4158B2C10788C00C49820 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FAB415922C1078BD00C49820 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FAB415942C10795A00C49820 /* Header */,
+				FAB415932C10790400C49820 /* Main */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FAB415932C10790400C49820 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FAB415862C10788B00C49820 /* ContentView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		FAB415942C10795A00C49820 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				FAB415972C10936200C49820 /* Icon */,
+				FAB415952C10797100C49820 /* HeaderView.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		FAB415972C10936200C49820 /* Icon */ = {
+			isa = PBXGroup;
+			children = (
+				FAB415982C10937900C49820 /* IconView.swift */,
+			);
+			path = Icon;
+			sourceTree = "<group>";
+		};
+		FAB4159A2C1093A500C49820 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FAB4159B2C1093C000C49820 /* IconViewModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +187,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAB415872C10788B00C49820 /* ContentView.swift in Sources */,
+				FAB4159C2C1093C000C49820 /* IconViewModel.swift in Sources */,
+				FAB415992C10937900C49820 /* IconView.swift in Sources */,
+				FAB415962C10797100C49820 /* HeaderView.swift in Sources */,
 				FAB415852C10788B00C49820 /* InstagramSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

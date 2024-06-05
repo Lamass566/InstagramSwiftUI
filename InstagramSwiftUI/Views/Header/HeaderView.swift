@@ -1,15 +1,21 @@
-//
-//  HeaderView.swift
-//  InstagramSwiftUI
-//
-//  Created by Macbook on 05.06.2024.
-//
-
 import SwiftUI
 
 struct HeaderView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        HStack{
+            
+            Text("Instagram")
+                .foregroundStyle(.white)
+                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+            
+            Spacer()
+            
+            HStack{
+                IconView(countOfItems: 0, typeOfIcon: .like)
+                IconView(countOfItems: 2, typeOfIcon: .message)
+            }.foregroundStyle(.white)
+        }.padding()
     }
 }
 
