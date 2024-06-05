@@ -8,6 +8,7 @@ struct HeaderView: View {
             Text("Instagram")
                 .foregroundStyle(.white)
                 .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                .bold()
             
             Spacer()
             
